@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+class Fibanocci {
+     static int n=0;
+     static int n1=0;
+     static int n2=1;
+     static int t=0;
+    public static void main (String[] args) {
+        //1. declare variables
+        Scanner sc = new Scanner(System.in);
+        //... other variables go here
+       
+        //2. get user input
+        while (n<4000000){
+            n=Math.abs(n1+n2);
+            if (n%2==0){
+                System.out.println(n);
+                t+=n;
+            }
+            n1=n2;
+            n2=n;
+        }
+        System.out.println("Total: " + t);
+        
+            
+        
+        //3. calculate and display answer
+    }
+    
+}

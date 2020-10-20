@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+class Sum {
+
+    public static void main (String[] args) {
+        //1. declare variables
+        Scanner sc = new Scanner(System.in);
+        //... other variables go here
+        
+        int n=0; 
+        int t=0;
+        int a=1000;
+        //2. get user input
+        while (n<a){
+            if (n%5==0 || n%3==0){
+               System.out.println(n);
+               t+=n;
+            }
+            n++;
+        }
+        System.out.println("Total: " + t);
+        //use sc.nextDouble(); to get a decimal or an int value from terminal.
+        //    sc.nextInt(); to get only an int value from terminal.
+        //    sc.nextBoolean(); to get a boolean from terminal.
+        //    sc.nextLine(); to get a String from terminal.
+        
+        //3. calculate and display answer
+    }
+}

@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+class SumOfSquares {
+    static int n=0;
+    static int n1=0;
+    static int n2=0;
+    static int t1=0;
+    static int t2=0;
+    static int t3=0;
+    public static void main (String[] args) {
+        //1. declare variables
+        Scanner sc = new Scanner(System.in);
+        //... other variables go here
+        
+        SumSquare();
+        SquareSum();
+        
+        //2. get user input
+        System.out.println("Total: " + (Math.abs(t2-t3)));
+        //use sc.nextDouble(); to get a decimal or an int value from terminal.
+        //    sc.nextInt(); to get only an int value from terminal.
+        //    sc.nextBoolean(); to get a boolean from terminal.
+        //    sc.nextLine(); to get a String from terminal.
+        
+        //3. calculate and display answer
+    }
+
+    public static void SumSquare(){
+        while (n1<=100){
+         t1=(n1)*(n1);
+         t3+=t1;
+         n1++;
+         System.out.println(t3);
+        }
+        
+        System.out.println("T1: " + t3);
+     }
+    public static void SquareSum(){
+        while (n2<=100){
+            t2+=n2;
+            n2++;
+       }
+       t2=(t2)*(t2); 
+       System.out.println("T2 " + t2);
+    }
+}
